@@ -80,7 +80,7 @@
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)_d</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='debug|x64'">$(ProjectName)_d</TargetName>
   </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <Optimization>Full</Optimization>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -134,7 +134,7 @@
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
       <AdditionalIncludeDirectories>../../../../packages/thirdParty/timeTracker;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>NDEBUG;WIN32;_LIB;_CRT_SECURE_NO_WARNINGS;PTW32_STATIC_LIB;_WIN_64_VER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_NEWTON_USE_DOUBLE;NDEBUG;WIN32;_LIB;_CRT_SECURE_NO_WARNINGS;PTW32_STATIC_LIB;_WIN_64_VER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <ExceptionHandling>
       </ExceptionHandling>
@@ -217,7 +217,7 @@
       <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
       <OmitFramePointers>false</OmitFramePointers>
       <AdditionalIncludeDirectories>../../../../packages/thirdParty/timeTracker;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_DEBUG;WIN32;_LIB;_CRT_SECURE_NO_WARNINGS;PTW32_STATIC_LIB;_WIN_64_VER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_NEWTON_USE_DOUBLE;_DEBUG;WIN32;_LIB;_CRT_SECURE_NO_WARNINGS;PTW32_STATIC_LIB;_WIN_64_VER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>
       </ExceptionHandling>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
